@@ -1,0 +1,1 @@
+Dans GitHub > sos-pc57 > Add file > Upload files, déposer impression-3d.html et le dossier realisations avec les 19 photos. Conserver les autres fichiers existants. Valider Commit changes. Vérifier ensuite Netlify.
