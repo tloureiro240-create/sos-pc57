@@ -18,3 +18,10 @@
 @media(max-width:380px){.brand{white-space:normal;min-width:0}.brand>span:last-child{min-width:0}.site-header strong{overflow-wrap:anywhere}.btn{max-width:100%;text-align:center}.section p a{overflow-wrap:anywhere}}
 a:focus-visible{outline:3px solid #1764b4;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}a{transition:none!important}}
+
+/* Center the supplied logo and crop only the duplicate lettering from the hero. */
+.brand-original{background-image:url('/icon-192.png?v=20261013');background-size:contain;background-position:center;background-color:#fff}
+.hero-art{width:100%;height:auto;aspect-ratio:1536/430;background-size:100% auto;background-position:center 18.52%;mask-image:linear-gradient(to bottom,black 94%,transparent 100%)}
+.brand .amp{display:inline-block;font-size:1.3em;line-height:1;font-weight:900}
+.hero-copy h1 span{display:inline-block;font-size:1.22em;line-height:1;font-weight:900}
+@media(max-width:720px){.brand-original{background-size:contain;background-position:center}.hero-art{height:auto;aspect-ratio:1536/430;background-size:100% auto;background-position:center 18.52%}}
