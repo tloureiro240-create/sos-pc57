@@ -13,3 +13,8 @@
 .brand-original{background-position:-24px -4px;background-size:930px auto;background-color:#e8e8f9;border-radius:50%;image-rendering:auto;}
 .hero-art::after{content:none!important;}
 @media(max-width:720px){.brand-original{background-size:780px auto;background-position:-20px -3px;}}
+
+/* Keep navigation and contact controls readable on narrow screens. */
+@media(max-width:380px){.brand{white-space:normal;min-width:0}.brand>span:last-child{min-width:0}.site-header strong{overflow-wrap:anywhere}.btn{max-width:100%;text-align:center}.section p a{overflow-wrap:anywhere}}
+a:focus-visible{outline:3px solid #1764b4;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}a{transition:none!important}}
