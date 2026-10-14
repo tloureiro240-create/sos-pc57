@@ -28,5 +28,7 @@ a:focus-visible{outline:3px solid #1764b4;outline-offset:4px}
 
 /* Match the ampersand to the curved lettering in the original hero logo. */
 .hero-art{container-type:inline-size}
-.hero-art::after{content:"&";left:41.2%;top:78.5%;width:3.1%;height:14%;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-size:3.8cqw;font-weight:900;line-height:1;color:#151019;background:#f4eef8;border-radius:35%;transform:translate(-50%,-50%) rotate(25deg);text-shadow:none;padding:0}
-@media(max-width:720px){.hero-art::after{left:41.2%;top:78.5%;font-size:3.8cqw}}
+/* Keep the original tiny symbol covered independently of the raised letter. */
+.hero-art::before{content:"";position:absolute;left:41.2%;top:78.5%;width:3.1%;height:14%;background:#f4eef8;border-radius:35%;transform:translate(-50%,-50%) rotate(25deg);pointer-events:none}
+.hero-art::after{content:"&";left:41.2%;top:76%;width:3.1%;height:14%;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-size:3.8cqw;font-weight:900;line-height:1;color:#151019;background:transparent;border-radius:0;transform:translate(-50%,-50%) rotate(25deg);text-shadow:none;padding:0}
+@media(max-width:720px){.hero-art::after{left:41.2%;top:76%;font-size:3.8cqw}}
